@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+   <title>Survey Form</title></h1>
+
+    <link rel="stylesheet" href="styles.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+<h1 id="title">What is your DIY calling?</h1>
+<p class="description"
+id="description">This survey is to find out what your DIY calling is based on your likes and passions.</p>
+<br>
+<form id="survey-form">
+<label id="name-label" for="name">Name: <input id="name" name="name" class="custom-input" type="text" placeholder="Joe Doe" required /></label>
+<br><br>
+<label for="email" id="email-label">Email: <input id="email" class="custom-input" name="email" type="email" placeholder="joedoe00@gmail.com" required /></label>
+<br><br>
+<label for="number" id="number-label">Phone number: <input id="phone" class="custom-input" name="phone" placeholder="(123)456-7890" type="phone" required /></label>
+<br><br>
+<label for="number">Input your age (years): <input id="number" class="custom-input" placeholder="00" type="number" name="age" min="12" max="120" /></label>
+<br><br>
+ <label for="often">How often do you like to craft?
+          <select id="dropdown" name="often">
+            <option value="">(select one)</option>
+            <option value="1"> 1-2 times a week</option>
+            <option value="2"> 3-4 times a week</option>
+            <option value="3"> 5-6 times a week</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      <br><br>
+        <legend>What do you like to do the most? (required)</legend>
+        <br>
+        <label for="craft"><input id="craft" type="radio" name="craft" class="inline"
+        value="craft" checked /> Painting</label>
+       <br><br>
+        <label for="baking"><input id="baking" type="radio" name="craft" class="inline"
+        value="craft" /> Baking</label>
+        <br><br>
+      <label for="pottery"><input id="pottery" type="radio" name="craft" class="inline" 
+      value="craft"/> Pottery</label>
+      <br><br>
+      <legend>What aesthetic appeals to you the most?</legend>
+      <br><input id="goth" type="checkbox" name="personality" value="goth" unchecked> <label for="goth">Alternative /goth</label>
+      <input id="pastel" type="checkbox" name="personality" value="pastel" checked> <label for="pastel">Pretty Pastels</label>
+      <br><br><input id="cottage" type="checkbox" name="personality" value="cottage"
+      checked><label for="cottage">Cottage Core</label>
+      <input id="clean" type="checkbox" name="personality" value="clean"
+      unchecked><label for="clean">Clean/minimalist</label>
+      <br><br>
+       <label for="bio">Comments or other info</label><br>
+          <textarea id="bio" class="bio" name="bio" rows="5" cols="50" placeholder="oh, by the way..."></textarea>
+        </label>
+        <br>
+         <input id="submit" type="submit" class="submit" class="custom-submit" value="Submit" />
+</form>
+</body>
